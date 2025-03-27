@@ -9,7 +9,8 @@ import {
   RiCircleFill,
   RiDownloadLine,
 } from "@remixicon/react";
-import profile from "../../assets/images/about/header-portrait-resized.jpeg";
+// import profile from "../../assets/images/about/header-portrait-resized.jpeg";
+import profile from "../../assets/images/about/profile.png";
 import partner1 from "../../assets/images/client-logos/Devsinc logo.png";
 import partner2 from "../../assets/images/client-logos/comsats.jpg";
 import partner3 from "../../assets/images/client-logos/UON-Logo.png";
