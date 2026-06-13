@@ -35,7 +35,7 @@ Version      : 1.0
 :root {
   --main-color: #9f9f9f;
   --heading-color: #fff;
-  --primary-color: #a900c7;
+  --primary-color: #00d293;
   --lighter-color: #ccc;
   --subtitle-color: #ccc;
   --black-color: #000;
@@ -1193,7 +1193,8 @@ html {
   padding: 40px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 20px;
-  box-shadow: rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
     rgba(255, 255, 255, 0.036) 0px 3px 5.4px -2px inset;
   background-color: #121214;
 }
@@ -1206,7 +1207,8 @@ html {
   padding: 40px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 20px;
-  box-shadow: rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
     rgba(255, 255, 255, 0.036) 0px 3px 5.4px -2px inset;
   background-color: #121214;
 }
@@ -1216,7 +1218,8 @@ html {
   padding: 40px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 20px;
-  box-shadow: rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
     rgba(255, 255, 255, 0.036) 0px 3px 5.4px -2px inset;
   background-color: #121214;
 }
@@ -1516,7 +1519,8 @@ ul.extra-skills li i {
   padding: 40px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 20px;
-  box-shadow: rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
     rgba(255, 255, 255, 0.036) 0px 3px 5.4px -2px inset;
   background-color: #121214;
 }
@@ -1549,7 +1553,7 @@ ul.extra-skills li i {
   border-radius: 12px;
   text-align: center;
   color: var(--primary-color);
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .resume-item .content .years {
@@ -1569,6 +1573,13 @@ ul.extra-skills li i {
   font-size: 16px;
 }
 
+.resume-item .icon .card-image-icon {
+  height: 40px;
+  width: auto;
+
+  border-radius: 100px;
+}
+
 /*
 * ----------------------------------------------------------------------------------------
 * 09.PORTFOLIO CSS STYLE
@@ -1584,7 +1595,8 @@ ul.extra-skills li i {
   padding: 40px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 20px;
-  box-shadow: rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
     rgba(255, 255, 255, 0.036) 0px 3px 5.4px -2px inset;
   background-color: #121214;
 }
@@ -1968,7 +1980,159 @@ ul.extra-skills li i {
 
 /*
 * ----------------------------------------------------------------------------------------
-* 11.PRICING CSS STYLE
+* 11.JOURNEY CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.journey-area {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.journey-timeline {
+  position: relative;
+  padding: 10px 0 0;
+}
+
+.journey-timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: var(--border-color);
+}
+
+.journey-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.journey-item:last-child {
+  margin-bottom: 0;
+}
+
+.journey-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.journey-item:nth-child(even) .journey-content {
+  text-align: right;
+}
+
+.journey-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  border: 3px solid #121214;
+  z-index: 1;
+}
+
+.journey-image,
+.journey-content {
+  width: calc(50% + 30px);
+}
+
+.journey-image {
+  padding: 0 15px;
+}
+
+.journey-image img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.journey-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  border-radius: 10px;
+  border: 1px dashed var(--border-color);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgb(119, 119, 125);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.journey-content {
+  padding: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 5%;
+}
+
+.journey-content:hover {
+  border-color: var(--primary-color);
+}
+
+.journey-content h3 {
+  color: var(--subtitle-color);
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.journey-content p {
+  margin-bottom: 0;
+  color: rgb(119, 119, 125);
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@media only screen and (max-width: 991px) {
+  .journey-timeline::before {
+    left: 15px;
+    transform: none;
+  }
+
+  .journey-item,
+  .journey-item:nth-child(even) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 45px;
+    margin-bottom: 40px;
+  }
+
+  .journey-item:nth-child(even) .journey-content {
+    text-align: left;
+  }
+
+
+  .journey-dot {
+    left: 15px;
+    top: 30px;
+    transform: translate(-50%, 0);
+  }
+
+  .journey-image,
+  .journey-content {
+    width: 100%;
+    padding: 20;
+    margin-left: 0;
+  }
+
+  .journey-image {
+    margin-bottom: 10px;
+    margin-top: 40px
+  }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 12.PRICING CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
 .pricing-area {
@@ -2252,7 +2416,8 @@ ul.extra-skills li i {
   padding: 80px 200px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 20px;
-  box-shadow: rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
+  box-shadow:
+    rgba(255, 255, 255, 0.025) 0px 0.362176px 0.651917px -1px inset,
     rgba(255, 255, 255, 0.036) 0px 3px 5.4px -2px inset;
   background-color: #121214;
 }
@@ -2938,4 +3103,12 @@ ul.blog_pagination li a:hover {
   border-radius: 14px;
   padding: 25px;
   border: 1px solid var(--border-color);
+}
+
+.highlight {
+  color: #00d293;
+}
+
+.white {
+  color: #ccc;
 }

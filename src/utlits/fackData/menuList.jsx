@@ -6,8 +6,8 @@ export const menuList = [
     },
     {
         id: 2,
-        path: "/about",
-        label: "About"
+        path: "/education_experience",
+        label: "Edu/Exp"
     },
     {
         id: 3,

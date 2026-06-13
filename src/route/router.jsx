@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "../layout/root";
 import Home from "../pages/home";
 import Contact from "../pages/contact";
-import About from "../pages/about";
+import Edu_Exp from "../pages/edu_exp";
 import Service from "../pages/service";
 import SingleProject from "../pages/single-project";
 import Works from "../pages/works";
@@ -22,8 +22,8 @@ export const router = createBrowserRouter([
                 element: <Contact />
             },
             {
-                path: "/about",
-                element: <About />
+                path: "/education_experience",
+                element: <Edu_Exp />
             },
             {
                 path: "/service",

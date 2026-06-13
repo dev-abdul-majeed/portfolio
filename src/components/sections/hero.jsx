@@ -22,13 +22,19 @@ const Hero = () => {
     <section id="about" className="about-area">
       <div className="container">
         <div className="row">
-          {/* <!-- START ABOUT IMAGE DESIGN AREA --> */}
           <div className="col-lg-4">
             <SlideUp>
               <div className="about-image-part">
                 <img src={profile} alt="About Me" />
                 <h2>Abdul Majeed</h2>
-                <p>I am a Software Engineer based in United Kingdom.</p>
+                <p className="white">
+                  I combine software engineering, research, and a people-first
+                  mindset to build solutions that are reliable, intuitive, and
+                  genuinely useful. Whether I'm developing a new feature,
+                  optimizing performance, or collaborating with stakeholders, my
+                  goal remains the same: to use technology to make life a little
+                  easier for the people who depend on it.
+                </p>
                 <div className="about-social text-center">
                   <ul>
                     <li>
@@ -52,17 +58,21 @@ const Hero = () => {
             <SlideUp>
               <div className="about-content-part">
                 <p>Greetings and Welcome!</p>
-                <h2>I’m Abdul Majeed, a passionate Software Engineer</h2>
-                <div className="adress-field">
-                  <ul>
-                    <li className="d-flex align-items-center">
-                      <i>
-                        <RiCircleFill size={14} />
-                      </i>{" "}
-                      Available for Immediate Start
-                    </li>
-                  </ul>
-                </div>
+                <p>
+                  I’m <h1 className="highlight">Abdul Majeed</h1>Technology
+                  changes quickly but{" "}
+                  <span className="highlight">Helping people</span> never goes
+                  out of style. That's why I build{" "}
+                  <span className="highlight">software</span>.
+                </p>
+                <p className="white">
+                  I'm a London-based Software Engineer with 3 years of
+                  professional Ruby on Rails experience building educational
+                  technology and enterprise software. My journey has taken me
+                  from teaching students and leading university initiatives to
+                  developing products used by hundreds of thousands of people.
+                </p>
+
                 <div className="hero-btns">
                   <Link to="/contact" className="theme-btn">
                     Download CV{" "}
@@ -73,7 +83,7 @@ const Hero = () => {
                 </div>
               </div>
             </SlideUp>
-            <SlideUp>
+            {/* <SlideUp>
               <div className="about-content-part-bottom">
                 <h2>Companies I Worked With</h2>
                 <div className="company-list">
@@ -88,7 +98,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-            </SlideUp>
+            </SlideUp> */}
           </div>
           {/* <!-- / END ABOUT TEXT DESIGN AREA --> */}
         </div>
