@@ -1,8 +1,11 @@
 import React from "react";
 import SlideUp from "../../utlits/animations/slideUp";
 import devsincImage from "../../assets/images/client-logos/devsinc-card.png";
-import uonImage from "../../assets/images/client-logos/uon-card.png";
-import weaversImage from "../../assets/images/client-logos/weavers-card.png";
+import researchGrid from "../../assets/images/about/research_grid.jpg";
+import devsincGrid from "../../assets/images/about/devsinc_grid.jpg";
+import teachingGrid from "../../assets/images/about/teaching_grid.jpg";
+import ilcLead from "../../assets/images/about/ilc_lead.jpeg";
+import todayGrid from "../../assets/images/about/today_grid.jpg";
 
 const journeySteps = [
   {
@@ -10,14 +13,15 @@ const journeySteps = [
     title: "Teacher",
     description:
       "Before writing code professionally, I spent years teaching and mentoring students. It taught me how to simplify complex ideas and understand different perspectives—skills that continue to shape my approach to software development.",
-    imageCaption: "Photo from your teaching days",
+    image: teachingGrid,
+    imageCaption: "Photo from my teaching days",
   },
   {
     id: 2,
     title: "Student Leader",
     description:
       "As the lead of a 70+ member student team, I worked with industry partners, organized recruitment events, and helped create opportunities for fellow students.",
-    image: weaversImage,
+    image: ilcLead,
     imageAlt: "University leadership",
     imageCaption: "University leadership photo",
   },
@@ -26,7 +30,7 @@ const journeySteps = [
     title: "Software Engineer",
     description:
       "At Devsinc, I helped build and scale enterprise educational software used by hundreds of thousands of users while working closely with clients, testers, and development teams.",
-    image: devsincImage,
+    image: devsincGrid,
     imageAlt: "Devsinc",
     imageCaption: "Devsinc photo",
   },
@@ -35,7 +39,7 @@ const journeySteps = [
     title: "Research Assistant",
     description:
       "During my MSc in Computing, I developed a group marking platform as part of my research assistant role, bridging academic research and practical software engineering.",
-    image: uonImage,
+    image: researchGrid,
     imageAlt: "University of Northampton",
     imageCaption: "University of Northampton photo",
   },
@@ -45,6 +49,7 @@ const journeySteps = [
     description:
       "Today, I'm based in London and looking for opportunities to continue building software that makes a meaningful difference to the people who use it.",
     imageCaption: "London photo",
+    image: todayGrid,
   },
 ];
 
@@ -63,17 +68,19 @@ const Journey = () => {
             </div>
           </div>
           <div className="journey-timeline">
-            {journeySteps.map(({ id, title, description, image, imageAlt, imageCaption }) => (
-              <JourneyStep
-                key={id}
-                id={id}
-                title={title}
-                description={description}
-                image={image}
-                imageAlt={imageAlt}
-                imageCaption={imageCaption}
-              />
-            ))}
+            {journeySteps.map(
+              ({ id, title, description, image, imageAlt, imageCaption }) => (
+                <JourneyStep
+                  key={id}
+                  id={id}
+                  title={title}
+                  description={description}
+                  image={image}
+                  imageAlt={imageAlt}
+                  imageCaption={imageCaption}
+                />
+              ),
+            )}
           </div>
         </div>
       </div>
@@ -83,7 +90,14 @@ const Journey = () => {
 
 export default Journey;
 
-const JourneyStep = ({ id, title, description, image, imageAlt, imageCaption }) => {
+const JourneyStep = ({
+  id,
+  title,
+  description,
+  image,
+  imageAlt,
+  imageCaption,
+}) => {
   return (
     <SlideUp delay={id}>
       <div className="journey-item">
