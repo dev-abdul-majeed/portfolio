@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import {
   RiFacebookCircleFill,
@@ -13,6 +12,7 @@ import profile from "../../assets/images/hero.png";
 import partner1 from "../../assets/images/client-logos/Devsinc logo.png";
 import partner2 from "../../assets/images/client-logos/comsats.jpg";
 import partner3 from "../../assets/images/client-logos/UON-Logo.png";
+import cv from "../../assets/Abdul_Majeed_CV.pdf";
 
 import SlideUp from "../../utlits/animations/slideUp";
 
@@ -80,12 +80,16 @@ const Hero = () => {
                 </p>
 
                 <div className="hero-btns">
-                  <Link to="/contact" className="theme-btn">
+                  <a
+                    href={cv}
+                    download="Abdul_Majeed_CV.pdf"
+                    className="theme-btn"
+                  >
                     Download CV{" "}
                     <i>
                       <RiDownloadLine size={16} />
                     </i>{" "}
-                  </Link>
+                  </a>
                 </div>
               </div>
             </SlideUp>
