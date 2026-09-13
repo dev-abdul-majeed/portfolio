@@ -13,7 +13,7 @@ const Summary = () => {
               <div className="about-content-part text-center">
                 <h2>Education & Experience</h2>
                 <p>
-                  This page traces the path behind my work — from teaching and
+                  This page traces the path behind my work. From teaching and
                   student leadership, through industry delivery, to research and
                   postgraduate study in the UK.
                 </p>

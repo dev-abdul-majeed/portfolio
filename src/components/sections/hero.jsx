@@ -27,8 +27,8 @@ const Hero = () => {
                 <img src={profile} alt="About Me" />
                 <h2>Abdul Majeed</h2>
                 <p className="white">
-                  Curious builder, former teacher, and research collaborator —
-                  focused on making complex products feel simple for the people
+                  Curious builder, former teacher, and research collaborator.
+                  Focused on making complex products feel simple for the people
                   who use them every day.
                 </p>
                 <div className="about-social text-center">
@@ -73,7 +73,7 @@ const Hero = () => {
                 </p>
                 <p className="white">
                   Based in London, I've spent the last three years shipping
-                  Ruby on Rails products in education and enterprise — work that
+                  Ruby on Rails products in education and enterprise, work that
                   grew out of teaching, leading student initiatives, and later
                   contributing to platforms used by hundreds of thousands of
                   people.
