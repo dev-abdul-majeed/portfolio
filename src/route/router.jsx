@@ -3,7 +3,6 @@ import RootLayout from "../layout/root";
 import Home from "../pages/home";
 import Contact from "../pages/contact";
 import Edu_Exp from "../pages/edu_exp";
-import Service from "../pages/service";
 import SingleProject from "../pages/single-project";
 import Projects from "../pages/projects";
 
@@ -24,10 +23,6 @@ export const router = createBrowserRouter([
             {
                 path: "/education_experience",
                 element: <Edu_Exp />
-            },
-            {
-                path: "/service",
-                element: <Service />
             },
             {
                 path: "/single-project",

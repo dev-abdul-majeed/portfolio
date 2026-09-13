@@ -21,7 +21,7 @@ const CallToAction = () => {
       heading_1 = "I've got some interesting projects";
       heading_2 = "Take a look at my work...";
       btn_txt = "Projects and Blogs ";
-      btn_link = "/service";
+      btn_link = "/projects";
       break;
 
     default:
