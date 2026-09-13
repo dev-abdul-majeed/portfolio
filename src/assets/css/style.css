@@ -1938,8 +1938,9 @@ ul.extra-skills li i {
 .testimonial-item .author img {
   display: inline-block;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
 }
 
 .testimonial-item .text {
@@ -2110,7 +2111,6 @@ ul.extra-skills li i {
     text-align: left;
   }
 
-
   .journey-dot {
     left: 15px;
     top: 30px;
@@ -2126,7 +2126,7 @@ ul.extra-skills li i {
 
   .journey-image {
     margin-bottom: 10px;
-    margin-top: 40px
+    margin-top: 40px;
   }
 }
 

@@ -1,12 +1,15 @@
-import React from 'react'
-import Portfolio from '../components/sections/portfolio'
+import React, { useEffect } from "react";
+import Portfolio from "../components/sections/portfolio";
 
 const Works = () => {
-    return (
-        <>
-            <Portfolio className={"innerpage-single-area"} />
-        </>
-    )
-}
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <>
+      <Portfolio className={"innerpage-single-area"} />
+    </>
+  );
+};
 
-export default Works
+export default Works;

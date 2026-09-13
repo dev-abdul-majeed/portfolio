@@ -1,14 +1,17 @@
-import React from 'react'
-import Pricing from '../components/sections/pricing'
-import ServiceGrid from '../components/sections/serviceGrid'
+import React, { useEffect } from "react";
+import Pricing from "../components/sections/pricing";
+import ServiceGrid from "../components/sections/serviceGrid";
 
 const Service = () => {
-    return (
-        <>
-            <ServiceGrid />
-            <Pricing />
-        </>
-    )
-}
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <>
+      <ServiceGrid />
+      <Pricing />
+    </>
+  );
+};
 
-export default Service
+export default Service;
