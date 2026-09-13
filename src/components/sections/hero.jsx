@@ -38,14 +38,24 @@ const Hero = () => {
                 <div className="about-social text-center">
                   <ul>
                     <li>
-                      <Link to="">
+                      <a
+                        href="https://www.linkedin.com/in/a-majeed-ahmed/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                      >
                         <RiLinkedinFill size={20} />
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="">
+                      <a
+                        href="https://github.com/dev-abdul-majeed"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                      >
                         <RiGithubLine size={20} />
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>

@@ -37,7 +37,13 @@ const CallToAction = () => {
       btn_link = "/contact";
       break;
 
+
     default:
+      heading_1 = "Thank you for visiting my portfolio!";
+      btn_link = "/";
+      btn_txt = "Home";
+      innerText =
+        "I will be over the moon to hear back from you!";
       break;
   }
 

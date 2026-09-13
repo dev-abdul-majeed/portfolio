@@ -75,11 +75,7 @@ const Header = () => {
                 </div>
               </nav>
             </div>
-            <div className="menu-btns">
-              <Link to="/contact" className="theme-btn">
-                Hire Me <RiShakeHandsLine size={15} />{" "}
-              </Link>
-            </div>
+            
           </div>
         </div>
       </div>

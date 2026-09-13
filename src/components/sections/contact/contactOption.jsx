@@ -1,4 +1,10 @@
-import { RiMailLine, RiMapPinLine, RiPhoneLine } from "@remixicon/react";
+import {
+  RiGithubLine,
+  RiLinkedinBoxLine,
+  RiMailLine,
+  RiMapPinLine,
+  RiPhoneLine,
+} from "@remixicon/react";
 import React from "react";
 import SlideUp from "../../../utlits/animations/slideUp";
 
@@ -11,19 +17,17 @@ const ContactOption = () => {
             <div className="single-contact">
               <div className="contact-icon">
                 <i>
-                  {" "}
                   <RiMapPinLine size={20} />
                 </i>
               </div>
               <h2>Address:</h2>
-              <p>Northampton, NN1, United Kingdom</p>
+              <p>London, United Kingdom</p>
             </div>
           </SlideUp>
           <SlideUp delay={3}>
-            <div className="single-contact wow fadeInUp" data-wow-delay=".4s">
+            <div className="single-contact">
               <div className="contact-icon">
                 <i>
-                  {" "}
                   <RiPhoneLine size={20} />
                 </i>
               </div>
@@ -32,15 +36,56 @@ const ContactOption = () => {
             </div>
           </SlideUp>
           <SlideUp delay={4}>
-            <div className="single-contact wow fadeInUp" data-wow-delay=".6s">
+            <div className="single-contact">
               <div className="contact-icon">
                 <i>
-                  {" "}
                   <RiMailLine size={20} />
                 </i>
               </div>
               <h2>Email:</h2>
-              <p>dev.abdul.majeed@gmail.com</p>
+              <p>
+                <a href="mailto:dev.abdul.majeed@gmail.com">
+                  dev.abdul.majeed@gmail.com
+                </a>
+              </p>
+            </div>
+          </SlideUp>
+          <SlideUp delay={5}>
+            <div className="single-contact">
+              <div className="contact-icon">
+                <i>
+                  <RiGithubLine size={20} />
+                </i>
+              </div>
+              <h2>GitHub:</h2>
+              <p>
+                <a
+                  href="https://github.com/dev-abdul-majeed"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/dev-abdul-majeed
+                </a>
+              </p>
+            </div>
+          </SlideUp>
+          <SlideUp delay={6}>
+            <div className="single-contact">
+              <div className="contact-icon">
+                <i>
+                  <RiLinkedinBoxLine size={20} />
+                </i>
+              </div>
+              <h2>LinkedIn:</h2>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/a-majeed-ahmed/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  linkedin.com/in/a-majeed-ahmed
+                </a>
+              </p>
             </div>
           </SlideUp>
         </div>

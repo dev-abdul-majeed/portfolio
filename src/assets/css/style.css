@@ -2430,6 +2430,59 @@ ul.extra-skills li i {
   border-radius: 10px;
 }
 
+.contact-email-cta h3 {
+  color: var(--subtitle-color);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.contact-email-cta p {
+  color: rgb(119, 119, 125);
+  margin-bottom: 25px;
+}
+
+.contact-email-cta a {
+  color: #fff;
+}
+
+.contact-email-cta .hero-btns {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.contact-social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.contact-social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  color: var(--subtitle-color);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact-social-links a:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.single-contact p a {
+  color: rgb(119, 119, 125);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.single-contact p a:hover {
+  color: var(--primary-color);
+}
+
 .single-contact h2 {
   font-size: 16px;
   margin-top: 5px;
