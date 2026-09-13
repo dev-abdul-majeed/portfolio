@@ -16,8 +16,8 @@ export const menuList = [
     },
     {
         id: 4,
-        path: "/works",
-        label: "Works"
+        path: "/projects",
+        label: "Projects"
     },
     {
         id: 5,

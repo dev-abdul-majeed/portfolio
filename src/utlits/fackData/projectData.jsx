@@ -1,44 +1,51 @@
-import work_1 from "../../assets/images/projects/work1.jpg"
-import work_2 from "../../assets/images/projects/work2.jpg"
-import work_3 from "../../assets/images/projects/work3.jpg"
-import work_4 from "../../assets/images/projects/work4.jpg"
+import bethel from "../../assets/images/works_svgs/bethel-react-native.svg"
+import rawgio from "../../assets/images/works_svgs/rawg-io-react.svg"
+import gpatm from "../../assets/images/works_svgs/gpa-tm-rails.svg"
+import workloadms from "../../assets/images/works_svgs/workloadms-java.svg"
+import vidly from "../../assets/images/works_svgs/vidly-node.svg"
+import sarparast from "../../assets/images/works_svgs/sarparast.svg"
 
 export const projectsData = [
     {
         id: 1,
-        src: work_1,
-        category: "Design",
-        title: "Mobile Application Design",
+        src: gpatm,
+        category: "Ruby on Rails",
+        title: "gpa_tm",
+        link: "https://github.com/dev-abdul-majeed/gpa_tm",
     },
     {
         id: 2,
-        src: work_2,
-        category: "Game",
-        title: "Website Makeup Design",
+        src: bethel,
+        category: "React Native",
+        title: "Bethel",
+        link: "https://github.com/dev-abdul-majeed/bethel",
     },
     {
         id: 3,
-        src: work_3,
-        category: "Branding",
-        title: "Brand Identity and Motion Design",
+        src: rawgio,
+        category: "React",
+        title: "Rawg-io",
+        link: "https://github.com/dev-abdul-majeed/Rawg-io",
     },
     {
         id: 4,
-        src: work_4,
-        category: "Marketing",
-        title: "Mobile Application Design",
+        src: workloadms,
+        category: "Java",
+        title: "WorkloadMS",
+        link: "https://github.com/dev-abdul-majeed/WorkloadMS",
     },
     {
         id: 5,
-        src: work_3,
-        category: "Design",
-        title: "Brand Identity and Motion Design",
+        src: vidly,
+        category: "Node.js",
+        title: "Vidly",
+        link: "https://github.com/dev-abdul-majeed/vidly",
     },
     {
         id: 6,
-        src: work_1,
-        category: "Marketing",
-        title: "Brand Identity and Motion Design"
+        src: sarparast,
+        category: "Full Stack",
+        title: "Sarparast",
+        link: "https://github.com/dev-abdul-majeed/sarparast",
     },
-
 ]

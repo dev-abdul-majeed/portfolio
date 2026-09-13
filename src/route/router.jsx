@@ -5,7 +5,7 @@ import Contact from "../pages/contact";
 import Edu_Exp from "../pages/edu_exp";
 import Service from "../pages/service";
 import SingleProject from "../pages/single-project";
-import Works from "../pages/works";
+import Projects from "../pages/projects";
 
 
 export const router = createBrowserRouter([
@@ -34,8 +34,8 @@ export const router = createBrowserRouter([
                 element: <SingleProject />
             },
             {
-                path: "/works",
-                element: <Works />
+                path: "/projects",
+                element: <Projects />
             },
         ]
     }
