@@ -9,8 +9,7 @@ import {
   RiCircleFill,
   RiDownloadLine,
 } from "@remixicon/react";
-// import profile from "../../assets/images/about/header-portrait-resized.jpeg";
-import profile from "../../assets/images/about/profile.png";
+import profile from "../../assets/images/hero.png";
 import partner1 from "../../assets/images/client-logos/Devsinc logo.png";
 import partner2 from "../../assets/images/client-logos/comsats.jpg";
 import partner3 from "../../assets/images/client-logos/UON-Logo.png";
@@ -28,12 +27,9 @@ const Hero = () => {
                 <img src={profile} alt="About Me" />
                 <h2>Abdul Majeed</h2>
                 <p className="white">
-                  I combine software engineering, research, and a people-first
-                  mindset to build solutions that are reliable, intuitive, and
-                  genuinely useful. Whether I'm developing a new feature,
-                  optimizing performance, or collaborating with stakeholders, my
-                  goal remains the same: to use technology to make life a little
-                  easier for the people who depend on it.
+                  Curious builder, former teacher, and research collaborator —
+                  focused on making complex products feel simple for the people
+                  who use them every day.
                 </p>
                 <div className="about-social text-center">
                   <ul>
@@ -76,11 +72,11 @@ const Hero = () => {
                   <span className="highlight">software</span>.
                 </p>
                 <p className="white">
-                  I'm a London-based Software Engineer with 3 years of
-                  professional Ruby on Rails experience building educational
-                  technology and enterprise software. My journey has taken me
-                  from teaching students and leading university initiatives to
-                  developing products used by hundreds of thousands of people.
+                  Based in London, I've spent the last three years shipping
+                  Ruby on Rails products in education and enterprise — work that
+                  grew out of teaching, leading student initiatives, and later
+                  contributing to platforms used by hundreds of thousands of
+                  people.
                 </p>
 
                 <div className="hero-btns">

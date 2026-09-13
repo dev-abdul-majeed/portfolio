@@ -25,7 +25,7 @@ const CallToAction = () => {
       heading_2 = "Take a look at my work...";
       innerText =
         "See how those experiences turn into real products — from mobile apps to full-stack systems.";
-      btn_txt = "Projects and Blogs ";
+      btn_txt = "Projects";
       btn_link = "/projects";
       break;
     case "/projects":
