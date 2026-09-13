@@ -8,20 +8,33 @@ const CallToAction = () => {
 
   let heading_1 = "";
   let heading_2 = "";
+  let innerText = "";
   let btn_txt = "";
   let btn_link = "";
   switch (location) {
     case "/":
       heading_1 = "Liked my human side?";
       heading_2 = "Take a quick look at my timeline and testimonials...";
+      innerText =
+        "From classrooms to code, my path has been shaped by people, curiosity, and continuous learning.";
       btn_txt = "Education and experinece";
       btn_link = "/education_experience";
       break;
     case "/education_experience":
       heading_1 = "I've got some interesting projects";
       heading_2 = "Take a look at my work...";
+      innerText =
+        "See how those experiences turn into real products — from mobile apps to full-stack systems.";
       btn_txt = "Projects and Blogs ";
       btn_link = "/projects";
+      break;
+    case "/projects":
+      heading_1 = "From teaching to engineering —";
+      heading_2 = "this journey, these skills, and every project led here.";
+      innerText =
+        "If my background, toolkit, or work resonate with what you're building, I'd love to connect.";
+      btn_txt = "Let's talk";
+      btn_link = "/contact";
       break;
 
     default:
@@ -39,9 +52,7 @@ const CallToAction = () => {
                 <h2>{heading_1}</h2>
                 <h2>{heading_2}</h2>
                 <p>
-                  Reach out and let's make it happen ✨. I'm also available for
-                  full-time or Part-time opportunities to push the boundaries of
-                  engineering and deliver exceptional work.
+                  {innerText}
                 </p>
                 <div className="hero-btns">
                   <Link to={btn_link} className="theme-btn">

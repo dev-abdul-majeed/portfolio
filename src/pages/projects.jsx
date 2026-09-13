@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Skills from "../components/sections/skills";
 import Portfolio from "../components/sections/portfolio";
 
 const Projects = () => {
@@ -7,7 +8,8 @@ const Projects = () => {
   }, []);
   return (
     <>
-      <Portfolio className={"innerpage-single-area"} />
+      <Skills className="innerpage-single-area" />
+      <Portfolio />
     </>
   );
 };

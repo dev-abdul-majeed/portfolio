@@ -1505,6 +1505,80 @@ ul.extra-skills li i {
   padding-right: 10px;
 }
 
+.skills-showcase-area {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.skills-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skills-category {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #121214;
+}
+
+.skills-category:hover {
+  border-color: var(--primary-color);
+}
+
+.skills-category-title {
+  color: var(--subtitle-color);
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 8px 14px;
+  color: rgb(119, 119, 125);
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.skill-chip svg {
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.skill-chip:hover {
+  border-color: var(--primary-color);
+  color: var(--subtitle-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .skills-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-category {
+    padding: 20px;
+  }
+}
+
 /*
 * ----------------------------------------------------------------------------------------
 * 08.RESUME CSS STYLE
